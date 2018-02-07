@@ -27,6 +27,8 @@
 		h2 { color: #000000 }
 		h2.cjk { font-family: "Droid Sans Fallback" }
 		h2.ctl { font-family: "FreeSans" }
+		.boxed {  border: 3px solid red ; }
+		.note { color: red; }
 	</style>
 </head>
 <body lang="en-US" text="#000000" dir="ltr">
@@ -154,7 +156,12 @@ of LIAF (*)</address>
 <address style="text-indent: 0.25in; margin-bottom: 0.2in">./NEURON/vecevent.mod
 – module for input generator</address>
 <h2 class="western">Case Study 2</h2>
-<p>To obtain results of the Case Study 1, cd into directory
+<div class="boxed" >
+  <h3 class="note">Note.</h3><p class="note"> 
+	NEST module hh_psc_alpha does NOT completely implement the system of differential equations (2) in the paper. This module has a synaptic model with an injected current instead of a model with reversal potential and conductance. The difference slightly reduces the computational load for the NEST benchmark and does not affect any results of Case Study 2. This inaccuracy was found after the publication. The authors have posted this note to prevent further confusion.
+  </p>
+</div>
+<p>To obtain results of the Case Study 2, cd into directory
 CaseStudy2-400HH 
 </p>
 <p><b>cd CaseStudy2-400HH </b>
@@ -173,13 +180,13 @@ CaseStudy2-400HH
 	<tr valign="top">
 		<td width="33%" style="border: none; padding: 0in">
 			<p align="center"><b>BRIAN</b></p>
-			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEURON.jpg" name="Image7" align="bottom" width="616" height="482" border="0"/>
+			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-Brian.jpg" name="Image7" align="bottom" width="616" height="482" border="0"/>
 
 						</p>
 		</td>
 		<td width="33%" style="border: none; padding: 0in">
 			<p align="center"><b>NEST</b></p>
-			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEURON.jpg" name="Image8" align="bottom" width="616" height="482" border="0"/>
+			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEST.jpg" name="Image8" align="bottom" width="616" height="482" border="0"/>
 
 						</p>
 		</td>
