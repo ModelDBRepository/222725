@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.6.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changedby" content="Ruben Tikidji-Hamburyan"/>
+	<meta name="changed" content="2017-05-23T10:50:53.581141645"/>
+	<meta name="created" content="00:00:00">
+	<meta name="changedby" content="Ruben Tikidji-Hamburyan">
+	<meta name="changed" content="2017-05-23T10:49:36.116487867">
+	<meta name="created" content="00:00:00">
+	<meta name="changedby" content="Ruben Tikidji-Hamburyan">
+	<meta name="changed" content="2017-05-23T10:46:29.235203409">
+	<meta name="changedby" content="Ruben Tikidji-Hamburyan">
+	<style type="text/css">
+		address { color: #000000 }
+		td p { color: #000000 }
+		p { color: #000000 }
+		h4 { color: #000000 }
+		h4.cjk { font-family: "Droid Sans Fallback" }
+		h4.ctl { font-family: "FreeSans" }
+		h3 { color: #000000 }
+		h3.cjk { font-family: "Droid Sans Fallback" }
+		h3.ctl { font-family: "FreeSans" }
+		h2 { color: #000000 }
+		h2.cjk { font-family: "Droid Sans Fallback" }
+		h2.ctl { font-family: "FreeSans" }
+	</style>
+</head>
+<body lang="en-US" text="#000000" dir="ltr">
+<h4 class="western"><i>These BRIAN/NEST/NEURON</i> <i>scripts
+associated with paper (manuscript):</i></h4>
+<h3 class="western"><br/>
+Ruben A. Tikidji-Hamburyan, Vikram
+Narayana, Zeki Bozkus, and Tarek A. El-Ghazawi</h3>
+<h2 class="western">Software for Brain Network Simulations: A
+Comparative Study</h2>
+<h4 class="western" style="font-weight: normal"><i>We deeply appreciate the comments of reviewer Marcel Stimberg, which allowed us to significantly improve the quality of the code.</i></h4>
+<hr/>
+
+<p>To use theses scripts you need python libraries: 
+</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0in"><a href="http://www.numpy.org/">numpy</a>
+		</p>
+	<li/>
+<p style="margin-bottom: 0in"><a href="http://www.scipy.org/">scipy</a>
+		</p>
+	<li/>
+<p style="margin-bottom: 0in"><a href="http://matplotlib.org/">matplotlib</a>
+	and LaTeX for correct graphical interface 
+	</p>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in">and simulators:</p>
+<ol start="4">
+	<li/>
+<p>NEURON Release 7.4 (1370:16a7055d4a86) 2015-11-09</p>
+	<li/>
+<p>NEST version 2.12.0.</p>
+	<li/>
+<p>BRIAN version 2.0.1</p>
+</ol>
+<p>Under <u>Ubuntu</u> or any other <u>Debian</u> based Linux, run
+<br/>
+<b>sudo apt-get install python-numpy python-scipy
+python-matplotlib texlive-full cython</b>.</p>
+<p>You can use <b>yum</b> or <b>zymm</b> under <u>RadHad</u> or <u>SUSE</u>
+based Linux distributions. 
+</p>
+<p>You may also use <b>sudo pip install numpu scipy matloblib cython</b>
+in any distribution. 
+</p>
+<p>Follow instructions for installation NEURON, NEST and BRIAN
+simulators.</p>
+<hr/>
+
+<h2 class="western">Case Study 1</h2>
+<p>To obtain results of the Case Study 1, cd into directory
+CaseStudy1-5000LIF 
+</p>
+<p><b>cd CaseStudy1-5000LIF </b>
+</p>
+<p>and run simulations</p>
+<p><b>./Benchmark.sh</b></p>
+<p>The raster diagrams for each software will be shown.</p>
+<p><br/>
+<br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0" style="page-break-inside: avoid">
+	<col width="85*">
+	<col width="85*">
+	<col width="85*">
+	<tr valign="top">
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>BRIAN</b></p>
+			<p align="center"><img src="CaseStudy1-5000LIF/CaseStudy1-BRIAN.jpg" name="Image4" align="bottom" width="617" height="479" border="0"/>
+
+						</p>
+		</td>
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>NEST</b></p>
+			<p align="center"><img src="CaseStudy1-5000LIF/CaseStudy1-NEST.jpg" name="Image5" align="bottom" width="614" height="479" border="0"/>
+
+						</p>
+		</td>
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>NEURON</b></p>
+			<p align="center"><img src="CaseStudy1-5000LIF/CaseStudy1-NEURON.jpg" name="Image6" align="bottom" width="617" height="479" border="0"/>
+
+						</p>
+		</td>
+	</tr>
+</table>
+<p><br/>
+<br/>
+
+</p>
+<p>Statistics of software performance and number of lines and
+characters in corresponding modules and scripts will printed out in
+standard output. This statistics was used to obtained results of the
+case study. 
+</p>
+<h4 class="western">Files in this directory:</h4>
+<address style="text-indent: 0.25in; page-break-before: auto; page-break-after: auto">
+Benchmark.sh – script helper</address>
+<address style="text-indent: 0.25in"><i>BenchmarkAndMemory.sh</i> –
+same as Benchmark.sh but with memory usage estimation. 
+</address>
+<address style="text-indent: 0.25in">ee.ssv - E-E neuron connectivity</address>
+<address style="text-indent: 0.25in">ei.ssv - E-I neuron connectivity</address>
+<address style="text-indent: 0.25in">ie.ssv - I-E neuron connectivity</address>
+<address style="text-indent: 0.25in">ii.ssv - I-I neuron connectivity</address>
+<address style="text-indent: 0.25in">se.ssv - S-E neuron connectivity</address>
+<address style="text-indent: 0.25in">input.ssv - input pattern</address>
+<address style="text-indent: 0.25in">./BRIAN/example.py – script
+for BRIAN</address>
+<address style="text-indent: 0.25in">./NEST/example.py – script for
+NEST</address>
+<address style="text-indent: 0.25in">./NEST/iaf_psc_delta.h –
+module of LIAF, header (*)</address>
+<address style="text-indent: 0.25in">./NEST/iaf_psc_delta.cpp –
+module of LIAF, c++ code (*)</address>
+<address style="text-indent: 0.25in">./NEURON/example.py – script
+for NEURON</address>
+<address style="text-indent: 0.25in">./NEURON/intfire1.mod – module
+of LIAF (*)</address>
+<address style="text-indent: 0.25in; margin-bottom: 0.2in">./NEURON/vecevent.mod
+– module for input generator</address>
+<h2 class="western">Case Study 2</h2>
+<p>To obtain results of the Case Study 1, cd into directory
+CaseStudy2-400HH 
+</p>
+<p><b>cd CaseStudy2-400HH </b>
+</p>
+<p>and run simulations</p>
+<p><b>./Benchmark.sh</b></p>
+<p>The raster diagrams for each software will be shown.</p>
+<p><br/>
+<br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0" style="page-break-inside: avoid">
+	<col width="85*">
+	<col width="85*">
+	<col width="85*">
+	<tr valign="top">
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>BRIAN</b></p>
+			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEURON.jpg" name="Image7" align="bottom" width="616" height="482" border="0"/>
+
+						</p>
+		</td>
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>NEST</b></p>
+			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEURON.jpg" name="Image8" align="bottom" width="616" height="482" border="0"/>
+
+						</p>
+		</td>
+		<td width="33%" style="border: none; padding: 0in">
+			<p align="center"><b>NEURON</b></p>
+			<p align="center"><img src="CaseStudy2-400HH/CaseStudy2-NEURON.jpg" name="Image9" align="bottom" width="616" height="482" border="0"/>
+
+						</p>
+		</td>
+	</tr>
+</table>
+<p><br/>
+<br/>
+
+</p>
+<p>Statistics of software performance and number of lines and
+characters in corresponding modules and scripts will printed out in
+standard output. This statistics was used to obtained results of the
+case study. 
+</p>
+<h4 class="western">Files in this directory:</h4>
+<address style="text-indent: 0.25in; page-break-before: auto; page-break-after: auto">
+<br/>
+
+</address>
+<address style="text-indent: 0.25in">Benchmark.sh – script helper</address>
+<address style="text-indent: 0.25in"><i>BenchmarkAndMemory.sh</i> –
+same as Benchmark.sh but with memory usage estimation. 
+</address>
+<address style="text-indent: 0.25in">connections.ssv - network
+connectivity</address>
+<address style="text-indent: 0.25in">volt.ssv – voltage initial
+condition</address>
+<address style="text-indent: 0.25in">./BRIAN/example.py – script
+for BIRAK</address>
+<address style="text-indent: 0.25in">./NEST/example.py – script for
+NEST</address>
+<address style="text-indent: 0.25in">./NEST/hh_psc_alpha.h – module
+of HH, header (*)</address>
+<address style="text-indent: 0.25in">./NEST/hh_psc_alpha.cppmodule of
+HH, c++ code (*)</address>
+<address style="text-indent: 0.25in">./NEURON/example.py – script
+for NEURON</address>
+<address style="text-indent: 0.25in">./NEURON/expsyn.mod – module
+of double exponential synapses (*)</address>
+<address style="text-indent: 0.25in">./NEURON/exp2syn.mod – module
+of double exponential synapses (*)</address>
+<address style="text-indent: 0.25in">./NEURON/hh.mod – module for
+HH currents (*)</address>
+<address style="text-indent: 0.25in"><br/>
+
+</address>
+<address style="text-indent: 0.25in; margin-bottom: 0.2in">(*)<span style="font-variant: normal">
+</span><span style="font-variant: normal"><span style="font-style: normal">files
+are not required for simulation, but used for code complexity study.
+These files were copied from NEURON/NEST source code and cleaned from
+comments, empty lines etc.</span></span></address>
+</body>
+</html>
