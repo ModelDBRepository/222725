@@ -40,7 +40,7 @@ The raster diagrams for each software will be shown.
 
 |BRAIN|NEST |NEURON|
 |-|-|-|
-|![](CaseStudy1-5000LIF/CaseStudy1-5000LIF/CaseStudy1-BRIAN.jpg)|![](CaseStudy1-5000LIF/CaseStudy1-5000LIF/CaseStudy1-NEST.jpg)|![](CaseStudy1-5000LIF/CaseStudy1-5000LIF/CaseStudy1-NEURON.jpg)|
+|![](CaseStudy1-5000LIF/CaseStudy1-BRIAN.jpg)|![](CaseStudy1-5000LIF/CaseStudy1-NEST.jpg)|![](CaseStudy1-5000LIF/CaseStudy1-NEURON.jpg)|
 
 Statistics of software performance and number of lines and characters in corresponding modules and scripts will printed out in standard output. This statistics was used to obtained results of the case study.
 
@@ -81,7 +81,7 @@ The raster diagrams for each software will be shown.
 
 |BRAIN|NEST |NEURON|
 |-|-|-|
-|![](CaseStudy2-400HH/CaseStudy2-400HH/CaseStudy2-Brian.jpg)|![](CaseStudy2-400HH/CaseStudy2-400HH/CaseStudy2-NEST.jpg)|![](CaseStudy2-400HH/CaseStudy2-400HH/CaseStudy2-NEURON.jpg)|
+|![](CaseStudy2-400HH/CaseStudy2-Brian.jpg)|![](CaseStudy2-400HH/CaseStudy2-NEST.jpg)|![](CaseStudy2-400HH/CaseStudy2-NEURON.jpg)|
 
 Statistics of software performance and number of lines and characters in corresponding modules and scripts will printed out in standard output. This statistics was used to obtained results of the case study.
 
